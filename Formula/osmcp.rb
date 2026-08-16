@@ -5,21 +5,21 @@
 class Osmcp < Formula
   desc "A typed, policy-controlled OS capability layer for AI agents via MCP."
   homepage "https://github.com/KrushnaVardhanReddy/osmcp"
-  version "1.0.2"
+  version "1.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/KrushnaVardhanReddy/osmcp/releases/download/v1.0.2/osmcp_Darwin_x86_64.tar.gz"
-      sha256 "46672590ccd67d6929ec90e0cdda42e0895e70fd048ec2627ea5a639e633d983"
+      url "https://github.com/KrushnaVardhanReddy/osmcp/releases/download/v1.0.3/osmcp_Darwin_x86_64.tar.gz"
+      sha256 "fb0b75dedea7e810cd9686cc06e67a3fc0d7b76857d131e49a615b7b8850e55c"
 
       define_method(:install) do
         bin.install "osmcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/KrushnaVardhanReddy/osmcp/releases/download/v1.0.2/osmcp_Darwin_arm64.tar.gz"
-      sha256 "5f24c3ec8f5778d2619a3a90c4a589a86858f96af4449cb94ac215e9c5687169"
+      url "https://github.com/KrushnaVardhanReddy/osmcp/releases/download/v1.0.3/osmcp_Darwin_arm64.tar.gz"
+      sha256 "fe19feb67ccc7cf714c79ebd028672996dd1ee3c1b89e5769f1976585f7eccda"
 
       define_method(:install) do
         bin.install "osmcp"
@@ -29,15 +29,15 @@ class Osmcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/KrushnaVardhanReddy/osmcp/releases/download/v1.0.2/osmcp_Linux_x86_64.tar.gz"
-      sha256 "1108982620caa2af1fbd0b8bc418abaf6832ae77337d71aaddc710e6fde07fda"
+      url "https://github.com/KrushnaVardhanReddy/osmcp/releases/download/v1.0.3/osmcp_Linux_x86_64.tar.gz"
+      sha256 "d81085a0b4903562ac437b55e36e37fb7676b8182b0660a807e642d00fa51829"
       define_method(:install) do
         bin.install "osmcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/KrushnaVardhanReddy/osmcp/releases/download/v1.0.2/osmcp_Linux_arm64.tar.gz"
-      sha256 "967ba33677a2ded29ac2bb8d058db92dffe8681e4702af8d4b61412d6a389c6d"
+      url "https://github.com/KrushnaVardhanReddy/osmcp/releases/download/v1.0.3/osmcp_Linux_arm64.tar.gz"
+      sha256 "68291bfa43d5054c76f4df51371236787738b4f2e5aeb82631b5e51ae2d7cb61"
       define_method(:install) do
         bin.install "osmcp"
       end
